@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Dream Job</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Navigation -->
+    <nav class="bg-white px-4 py-2 shadow-md" id="mobileMenu">
+        <div class="max-w-6xl mx-auto flex justify-between">
+            <div class="flex space-x-4">
+                <div><a href="#" class="text-lg font-semibold text-gray-900">Find Your Dream Job</a></div>
+                <!-- Primary Navbar items -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#" class="py-2 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="#" class="py-2 px-3 text-gray-700 hover:text-gray-900">Job List</a>
+                    <a href="#" class="py-2 px-3 text-gray-700 hover:text-gray-900">Post a Job</a>
+                    <a href="#" class="py-2 px-3 text-gray-700 hover:text-gray-900">About Us</a>
+                    <a href="#" class="py-2 px-3 text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+            <!-- Secondary Navbar items -->
+            <div class="hidden md:flex items-center space-x-3">
+                <a href="#" class="py-2 px-3 text-gray-700 hover:text-gray-900">Sign In</a>
+                <a href="#" class="py-2 px-3 bg-blue-500 text-white rounded hover:bg-blue-600">Log In</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuButton" class="md:hidden" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center py-10 bg-cover bg-center" style="background-image: url(https://placehold.co/1920x800)">
+        <h1 class="text-4xl text-white font-bold">Find Your Dream Job</h1>
+        <p class="text-white mt-4">Browse through hundreds of opportunities to find the right one for you.</p>
+        <a href="#" class="mt-8 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Browse Jobs</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="my-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Side Column -->
+                <aside>
+                    <h2 class="text-xl font-semibold mb-4">Top Priority/Most Searched</h2>
+                    <div class="mb-4">
+                        <input type="text" id="searchInput" placeholder="Search for jobs, companies" class="w-full px-4 py-2 border rounded">
+                        <button id="searchButton" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-2">Search</button>
+                    </div>
+                    <ul class="text-left">
+                        <li class="mb-2 job"><a href="#" class="text-blue-500 hover:underline job-title">Featured Jobs</a></li>
+                        <li class="mb-2 job"><a href="#" class="text-blue-500 hover:underline job-title">Employer Spotlights</a></li>
+                        <li class="mb-2 job"><a href="#" class="text-blue-500 hover:underline job-title">Testimonials</a></li>
+                        <!-- Add more .job and .job-title as needed -->
+                    </ul>
+                </aside>
+
+                <!-- Main Column -->
+                <div class="md:col-span-2">
+                    <!-- Categories -->
+                    <section class="mb-10">
+                        <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+                        <div class="flex flex-wrap -mx-2">
+                            <a href="#" class="text-blue-500 hover:underline p-2">Terms of Service</a>
+                            <a href="#" class="text-blue-500 hover:underline p-2">Privacy Policy</a>
+                        </div>
+                    </section>
+
+                    <!-- Contact Information -->
+                    <section class="mb-10">
+                        <h2 class="text-xl font-semibold mb-4">Contact Information</h2>
+                        <p>Email: <a href="mailto:contact@jobboard.com" class="text-blue-500 hover:underline">contact@jobboard.com</a></p>
+                        <p>Phone: +1 (555) 123-4567</p>
+                    </section>
+
+                    <!-- Follow Us -->
+                    <section>
+                        <h2 class="text-xl font-semibold mb-4">Follow Us</h2>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-700 hover:text-gray-900 social-icon" data-social="linkedin"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-gray-900 social-icon" data-social="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-gray-900 social-icon" data-social="facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto flex justify-between">
+            <p>&copy; 2024 Find Your Dream Job. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-300">Terms of Service</a>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
